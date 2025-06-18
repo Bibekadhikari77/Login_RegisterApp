@@ -104,72 +104,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <!-- Create Account UI -->
-    <TextView
-        android:id="@+id/create_account_title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="64dp"
-        android:text="Create Account"
-        android:textSize="36sp"
-        android:visibility="gone"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <!-- Add other Create Account UI elements here with visibility="gone" -->
-    <!-- Example: Name label and EditText -->
-    <!--
-    <TextView
-        android:id="@+id/name_label_create"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="32dp"
-        android:text="Name"
-        android:visibility="gone"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/create_account_title" />
-
-    <EditText
-        android:id="@+id/name_edit_text_create"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="32dp"
-        android:hint="notobama"
-        android:inputType="textPersonName"
-        android:visibility="gone"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@id/name_label_create"
-        app:layout_constraintTop_toBottomOf="@id/name_label_create" />
-    -->
-
-    <!-- Add all other Create Account UI elements (email, password, button, login text) similarly -->
-
-    <TextView
-        android:id="@+id/already_account_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:text="Already have an account?"
-        android:visibility="gone"
-        app:layout_constraintBottom_toTopOf="@id/login_text_create"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/login_text_create"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="32dp"
-        android:text="Login"
-        android:textColor="@color/purple_700"
-        android:visibility="gone"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
     <!-- Groups to control visibility -->
     <androidx.constraintlayout.widget.Group
         android:id="@+id/login_group"
@@ -189,14 +123,6 @@
     <androidx.constraintlayout.widget.Group
         android:id="@+id/create_account_group"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:visibility="gone"
-        app:constraint_referenced_ids="
-            create_account_title,
-            already_account_text,
-            login_text_create"
-        tools:ignore="StateListAnimator" />
-    <!-- Add other Create Account UI element IDs to constraint_referenced_ids -->
-
+        android:layout_height="wrap_content" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
