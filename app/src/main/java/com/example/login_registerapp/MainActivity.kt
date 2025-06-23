@@ -10,7 +10,7 @@ import androidx.core.view.WindowInsetsCompat
 
 class MainActivity : AppCompatActivity() {
     private lateinit var createAccount: TextView
-    private lateinit var forgotPasswordTextView: TextView
+    private lateinit var forgotPassword: TextView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -24,12 +24,12 @@ class MainActivity : AppCompatActivity() {
         createAccount.setOnClickListener {
             val intent = Intent(applicationContext, CreateNewActivity::class.java)
             startActivity(intent)
+        }
 
-            forgotPasswordTextView = findViewById(R.id.tv_forgot_password)
-            forgotPasswordTextView.setOnClickListener {
-                val intent = Intent(applicationContext, ForgotPasswordActivity::class.java)
-                startActivity(intent)
-            }
+        forgotPassword = findViewById(R.id.tv_forgot_password)
+        forgotPassword.setOnClickListener {
+            val intent = Intent(applicationContext, ForgotPasswordActivity::class.java)
+            startActivity(intent)
         }
     }
 }
