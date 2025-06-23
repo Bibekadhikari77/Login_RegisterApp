@@ -75,7 +75,7 @@
         app:layout_constraintTop_toBottomOf="@id/password_edit_text_login" />
 
     <TextView
-        android:id="@+id/forgot_password_text"
+        android:id="@+id/tv_forgot_password"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
